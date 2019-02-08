@@ -10,6 +10,7 @@ namespace C0730065_week_5_
     {
         static void Main(string[] args)
         {
+            FGJH
         }
     }
 }
