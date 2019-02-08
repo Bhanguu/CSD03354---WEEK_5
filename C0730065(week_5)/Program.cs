@@ -9,16 +9,34 @@ namespace C0730065_week_5_
     class Program
     {
         static void Main(string[] args)
-        {
-          class Node
+        { }
+        class Node
         {
             public Node() { }
-            Node linkA;
-            Node elevatorUp;
-            string FloorNumber;
+            public Node linkA;
+            public Node elevatorUp;
+           public string FloorNumber;
 
         }
+        class Evelator
+        {
+            Node FirstFloor;
+            Node SecondFloor;
+            Node ThirdFloor;
+            Node FourthFloor;
 
+            public void run()
+            {
+                FirstFloor = new Node();
+                FirstFloor.FloorNumber = "First Floor";
+                Console.WriteLine("floor number is {0}",FirstFloor.FloorNumber);
+                FirstFloor.elevatorUp = SecondFloor;
+                SecondFloor.FloorNumber = "Second Floor";
+
+                Console.WriteLine("floor number is {0}",SecondFloor.FloorNumber);
+
+            }
         }
     }
 }
+
