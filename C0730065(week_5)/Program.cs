@@ -34,6 +34,7 @@ namespace C0730065_week_5_
                 SecondFloor.FloorNumber = "Second Floor";
 
                 Console.WriteLine("floor number is {0}",SecondFloor.FloorNumber);
+                Console.ReadLine();
 
             }
         }
