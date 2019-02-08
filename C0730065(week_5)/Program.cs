@@ -10,7 +10,15 @@ namespace C0730065_week_5_
     {
         static void Main(string[] args)
         {
-            FGJH
+          class Node
+        {
+            public Node() { }
+            Node linkA;
+            Node elevatorUp;
+            string FloorNumber;
+
+        }
+
         }
     }
 }
