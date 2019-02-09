@@ -58,10 +58,9 @@ namespace C0730065_week_5_
 
                 while (temp != null)
                 {
-
-                    //NOW GET TO THE SECOND FLOOR!!!!
-                    temp = temp.elevatorUp;
                     Console.WriteLine(temp.FloorNumber);
+                    temp = temp.elevatorUp;
+                   
 
                 }
             }
