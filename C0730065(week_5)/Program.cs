@@ -12,6 +12,8 @@ namespace C0730065_week_5_
         {
             Elevator e = new Elevator();
             e.setup();
+            e.traverseList();
+
         }
         class Node
         {
@@ -35,7 +37,7 @@ namespace C0730065_week_5_
                 SecondFloor = new Node();
                 ThirdFloor = new Node();
                 FourthFloor = new Node();
-
+                Head = new Node();
 
                 FirstFloor.FloorNumber = "First Floor";
                 FirstFloor.elevatorUp = SecondFloor;
@@ -49,13 +51,18 @@ namespace C0730065_week_5_
 
             public void traverseList()
             {
+                Node temp;
+                //Where am i going to start?
+                Console.WriteLine("The first floor is" + Head.FloorNumber);
+
                 while (true)
                 {
-                    
 
+                    //NOW GET TO THE SECOND FLOOR!!!!
 
                 }
             }
+        
         
     
 
