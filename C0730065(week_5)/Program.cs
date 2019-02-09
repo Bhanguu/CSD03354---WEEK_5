@@ -18,16 +18,31 @@ namespace C0730065_week_5_
         class Node
         {
             public Node() { }
-            public Node linkA;
+          
             public Node elevatorUp;
             public string FloorNumber;
         }
+
         class Department
         {
-            public Department adepartment;
+            public Department(string dept_name)
+            {
+                DepartmentDescription = dept_name;
+            }
+            public Department aDepartment;
+            public string DepartmentDescription;
         }
 
-        
+        class DepartmentStore
+        {
+            public void InitializeDepartments()
+            {
+                Department Kitchenware = new Department("Kitchenware");
+                Department Books = new Department("Books");
+
+            }
+
+        }
         class Elevator
         {
             Node Head;
