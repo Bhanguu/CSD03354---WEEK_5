@@ -41,6 +41,7 @@ namespace C0730065_week_5_
                 Department Books = new Department("Books");
                 Department Kitchenware = new Department("Kitchenware");
 
+
                 Kitchenware.nextDepartment = Books;
                 Kitchenware.previousDepartment = FirstFloor;
                 Department Books = new Department("Books");
