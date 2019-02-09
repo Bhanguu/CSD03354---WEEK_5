@@ -52,16 +52,24 @@ namespace C0730065_week_5_
             public void traverseList()
             {
                 Node temp;
+                temp = Head;
                 //Where am i going to start?
                 Console.WriteLine("The first floor is" + Head.FloorNumber);
 
-                while (true)
+                while (temp != null)
                 {
 
                     //NOW GET TO THE SECOND FLOOR!!!!
+                    temp = temp.elevatorUp;
+                    Console.WriteLine(temp.FloorNumber);
 
                 }
             }
+        }
+    }
+}
+        
+        
         
         
     
