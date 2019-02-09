@@ -29,7 +29,8 @@ namespace C0730065_week_5_
             {
                 DepartmentDescription = dept_name;
             }
-            public Department aDepartment;
+            public Department nextDepartment;
+            public Department previousDepartment;
             public string DepartmentDescription;
         }
 
@@ -37,7 +38,11 @@ namespace C0730065_week_5_
         {
             public void InitializeDepartments()
             {
+                Department Books = new Department("Books");
                 Department Kitchenware = new Department("Kitchenware");
+
+                Kitchenware.nextDepartment = Books;
+                Kitchenware.previousDepartment = FirstFloor;
                 Department Books = new Department("Books");
 
             }
