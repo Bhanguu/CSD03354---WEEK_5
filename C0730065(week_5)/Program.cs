@@ -90,8 +90,42 @@ namespace C0730065_week_5_
                 }
             }
         }
-    }
+
+        class BubbleSort
+
+        {
+            public void run()
+            {
+                int[] array = new int[5] { 9, 11, 3, 5, 17 };
+                int temp;
+
+                for (int i = 0; i < array.Length; i++)
+                {
+                    for (int j = 0; j < array.Length - 1; j++)
+                    {
+                        temp = 0;
+                        if (array[j] > array[j + 1])
+                        {
+                            temp = array[j];
+                            array[i] = array[j + 1];
+                            array[j + 1] = temp;
+                        }
+                    }
+                }
+                for (int i = 0; i < array.Length; i++)
+                {
+                    Console.WriteLine(array[i]);
+                }
+                // Console.WriteLine("the i-th value is {0} ", array[i]);
+            }
+
+            // Console.WriteLine("C'est Fini");
+
+        }
+    
 }
+    
+
         
         
         
