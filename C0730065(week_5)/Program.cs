@@ -21,8 +21,13 @@ namespace C0730065_week_5_
             public Node linkA;
             public Node elevatorUp;
             public string FloorNumber;
-
         }
+        class Department
+        {
+            public Department adepartment;
+        }
+
+        
         class Elevator
         {
             Node Head;
